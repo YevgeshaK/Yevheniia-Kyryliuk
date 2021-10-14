@@ -60,4 +60,15 @@
     font-size: 18px;
     line-height: 1.6;
   }
+
+  @include _mobile {
+    &__img {
+      max-width: 150px;
+      height: 150px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+  }
 }

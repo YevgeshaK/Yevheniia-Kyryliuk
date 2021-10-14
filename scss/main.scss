@@ -1,9 +1,9 @@
 @import './vendors/normalize';
 @import './vendors/owl.carousel.min.scss';
 
+@import './global/media';
 @import './global/placeholders';
 @import './global/base';
-@import './global/media';
 @import './global/container';
 
 @import './components/header';

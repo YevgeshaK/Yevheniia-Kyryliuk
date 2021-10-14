@@ -7,6 +7,12 @@
   }
 }
 
+.footer-menu {
+  @include _mobile {
+    display: none;
+  }
+}
+
 .footer-contacts {
   display: flex;
   align-items: center;
@@ -49,6 +55,15 @@
       &:last-child {
         margin-right: 0;
       }
+    }
+  }
+
+  @include _mobile {
+    flex-direction: column;
+    margin-bottom: 0;
+    &__item {
+      margin-right: 0;
+      margin-bottom: 30px;
     }
   }
 }

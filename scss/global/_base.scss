@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -39,6 +38,10 @@ img {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  @include _mobile {
+    font-size: 24px;
   }
 }
 
