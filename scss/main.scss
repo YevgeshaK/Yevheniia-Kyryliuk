@@ -1,0 +1,14 @@
+@import './vendors/normalize';
+@import './vendors/owl.carousel.min.scss';
+
+@import './global/placeholders';
+@import './global/base';
+@import './global/media';
+@import './global/container';
+
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/services';
+@import './components/certificate';
+@import './components/footer';

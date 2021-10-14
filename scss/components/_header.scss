@@ -1,0 +1,48 @@
+.header {
+  position: sticky;
+  padding: 30px 0;
+  z-index: 10;
+  top: 0;
+  background-color: rgba(158, 141, 119, 0.7);
+  backdrop-filter: blur(2px);
+  // box-shadow: 3px -36px 14px -18px rgba(37, 53, 50, 1) inset;
+
+  &__navigation {
+  }
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  &__item {
+    display: flex;
+  }
+  &__link {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s all;
+    position: relative;
+    &::after {
+      content: '';
+      opacity: 0;
+      width: 0;
+      height: 2px;
+      position: absolute;
+      background-color: red;
+      bottom: 0px;
+      left: 0;
+      transition: 0.3s all;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}
